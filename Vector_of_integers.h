@@ -1,13 +1,13 @@
 #pragma once
 #include "ExceptionClass.h"
 
-#define defaultCapacity 2
+#define DEFAULT_CAPACITY 2
 
 class Vector_of_integers
 {
 private:
 	int myCapacity;
-	int vecArray[defaultCapacity];
+	int vecArray[DEFAULT_CAPACITY];
 	int *vecArrayPoint = vecArray;
 	int mySize;
 public:
