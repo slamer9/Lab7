@@ -14,8 +14,6 @@ void ExceptionClass::dealWithError()
 		break;
 	case NEGATIVE_INDEX: std::cout << "There are no negative index cells. Try a positive index." << std::endl;
 		break;
-	case ZERO_INDEX: std::cout << "There is no 0th cell, entry is not 0 based indexing." << std::endl;
-		break;
 
 	default: std::cout << "Default!?" << std::endl;
 		break;

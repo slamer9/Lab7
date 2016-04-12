@@ -44,8 +44,7 @@ void Vector_of_integers::push_back(int value)
 		{
 			vecArrayPoint[i] = temp[i];
 		}
-		//DELETE ARRAY THAT TEMP IS POINTING TOO!!!!
-		delete temp; //???????????????????????????????
+		delete temp;
 	}
 	vecArrayPoint[mySize] = value;
 	mySize++;
@@ -53,18 +52,15 @@ void Vector_of_integers::push_back(int value)
 
 int Vector_of_integers::at(unsigned int n)
 {
-	if (n > mySize)
+	if (n > (mySize -1))
 	{
 		throw ExceptionClass(OUT_OF_BOUNDS);
 	}
-	if (n < 1)
-	{
-		throw ExceptionClass(ZERO_INDEX);
-	}
-	if (n < 1)									//Do before call, as unsigned int will not work
-	{											//
-		throw ExceptionClass(NEGATIVE_INDEX);	//
-	}											//
 
-	return vecArray[(n-1)];
+	//if (n < 0)								//Do before call, as unsigned int will not work
+	//{											//
+	//	throw ExceptionClass(NEGATIVE_INDEX);	//
+	//}											//
+
+	return vecArray[n];
 }

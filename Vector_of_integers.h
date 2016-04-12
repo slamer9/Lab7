@@ -14,9 +14,11 @@ public:
 	Vector_of_integers();
 	Vector_of_integers(unsigned int);
 	~Vector_of_integers();
+
 	int size();
 	int capacity();
+	int at(unsigned int);
+
 	void clear();
 	void push_back(int);
-	int at(unsigned int);
 };
