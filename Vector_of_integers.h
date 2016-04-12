@@ -7,8 +7,8 @@ class Vector_of_integers
 {
 private:
 	int myCapacity;
-	int vecArray[DEFAULT_CAPACITY];
-	int *vecArrayPoint = vecArray;
+	//int vecArray[DEFAULT_CAPACITY];
+	int *vecArrayPoint;// = vecArray;
 	int mySize;
 public:
 	Vector_of_integers();

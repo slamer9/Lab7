@@ -62,5 +62,5 @@ int Vector_of_integers::at(unsigned int n)
 	//	throw ExceptionClass(NEGATIVE_INDEX);	//
 	//}											//
 
-	return vecArray[n];
+	return vecArrayPoint[n];
 }
