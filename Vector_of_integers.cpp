@@ -17,6 +17,12 @@ Vector_of_integers::Vector_of_integers(unsigned int cap)
 
 Vector_of_integers::~Vector_of_integers()
 {
+	if (vecArrayPoint != NULL)
+	{
+		delete[] vecArrayPoint;
+		vecArrayPoint = NULL;
+		delete this; //?
+	}
 }
 
 int Vector_of_integers::size()

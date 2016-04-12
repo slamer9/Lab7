@@ -14,19 +14,26 @@ int main()
 	cout << myVector.capacity() << endl;
 	cout << myVector2.capacity() << endl << endl;
 
-	for (int i = 0; i < 5; i++)
+	try
 	{
-		myVector.push_back(i);
-		cout << myVector.at(i) << endl;
-	}
-	cout << endl << endl;
+		for (int i = 0; i < 5; i++)
+		{
+			myVector.push_back(i);
+			cout << myVector.at(i) << endl;
+		}
+		cout << endl << endl;
 
-	for (int i = 0; i < 12; i++)
-	{
-		myVector2.push_back(i);
-		cout << myVector2.at(i) << endl;
+		for (int i = 0; i < 12; i++)
+		{
+			myVector2.push_back(i);
+			cout << myVector2.at(i) << endl;
+		}
+		cout << endl << endl;
 	}
-	cout << endl << endl;
+	catch (ExceptionClass e)
+	{
+		e.dealWithError();
+	}
 
 	cout << myVector.capacity() << endl;
 	cout << myVector2.capacity() << endl;
